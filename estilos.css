@@ -1,0 +1,281 @@
+*{
+    background:#daabf0;
+    font-family: "roboto";
+    margin: 0;
+}
+
+header img{
+    margin: 10px 10px 5px 10px;
+    padding-bottom: 30px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /*position: relative;
+    min-height: 100vh;*/
+}
+.container3{
+    display: none;
+}
+
+
+#entrada{
+    border: none;
+    width: auto;
+    height: 40vh ;
+    margin: 1em;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgb(105, 9, 196);
+    resize: none;
+}
+.container1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+.advertencia{
+    display: inline-flex;
+    align-items: center;
+}
+.advertencia_img{
+    margin: 0.5em;
+}
+
+.advertencia p{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.botones{
+    display: flex;
+    flex-direction: column;
+}
+.encriptar{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border: 2px solid rgb(0,0,0,0.5) ;
+    box-shadow: 2px 2px 10px rgb(0,0,0,0.5) ;
+    color: white;
+    background-color:blueviolet;
+    border-radius: 1em;
+    margin: 0.3em;
+}
+button:hover{
+    background-color: rgb(105, 9, 196);
+}
+.container2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+.desencriptar{
+    margin-top: 1em;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border: 2px solid rgb(0,0,0,0.5) ;
+    box-shadow: 2px 2px 10px rgb(0,0,0,0.5) ;
+    color:black;
+    background-color:white;
+    border-radius: 1em;
+    margin: 0.3em;
+}
+
+#salida{
+    height:33vh ;
+    width: auto;
+    margin: 1em;
+    font-size: 1em;
+    font-weight: bold;
+    color: rgb(105, 9, 196);
+    resize: none;
+    padding: 12px;
+}
+
+.botoncopy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copiar{
+    margin: 0.5em;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border: 2px solid rgb(0,0,0,0.5) ;
+    box-shadow: 2px 2px 10px rgb(0,0,0,0.5) ;
+    color:black;
+    background-color:white;
+    border-radius: 1em;
+    width: 50%;
+}
+
+/*celular1*/
+
+@media screen and (max-width:375px) and (max-height:933px){
+    
+    #entrada{
+        margin: 0.4em;
+        height: 32vh;
+        font-size: 2em;
+        text-align: center;
+    }
+    
+}
+/*table2*/
+
+@media screen and (min-width:768px) and (min-height:1175px) and (max-height:1384px){
+    header img{
+        margin: 20px 10px 5px 20px;
+        padding-bottom: 30px;
+    }
+    
+    #entrada{
+        height: 44vh;
+        font-size: 3em;
+    }
+
+    .botones{
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .encriptar{
+        flex-basis: 15em;
+        height: 3em;
+        margin-right: 1em;
+        margin-left: 1em;
+    }
+    .desencriptar{
+        flex-basis: 15em;
+        height: 3em;
+        margin-right: 1em;
+        
+    }
+    #salida{
+        height: 18vh;
+        font-size: 2em;
+    }
+    .copiar{
+        height:2.5em;
+        width: 22em;
+        margin: auto;
+        font-size: 2em;
+    }
+}
+
+/*tablet1*/
+@media screen and (min-width:768px) and (min-height:768px) and (max-height:1174px){
+    #entrada{
+        height: 30vh;
+        
+    }
+    
+    header img{
+        margin: 20px 10px 5px 20px;
+        padding-bottom: 30px;
+    }
+    #salida{
+        height: 30vh;
+    }
+}
+
+/*compus*/
+@media screen and (min-width:976px){
+
+    header{
+        height: 40px;
+        position: fixed;
+    }
+    .logo{
+        width: 55%;
+        margin-left: 0.5em;
+        height: 35px;;
+    }
+    main{
+        display: flex;
+        min-height: 95vh;
+        
+    }
+    #entrada{
+        font-size: 2.5em;
+        height: 63vh;
+        width: 60vw;
+        margin-top: 110px;
+        
+    }
+    ::placeholder { color: #0A3871; }
+    #entrada:focus {
+      outline: none;
+    }
+    
+    .container2{
+        display: flex;
+        flex-direction: column;
+        min-height: 85vh;
+        justify-content: flex-end;
+        margin-top: 13px;
+        width: 35vw;
+        /*height: 884px; /*esto es igual a 85vh*/
+        margin-right: 15px;
+    }
+    #salida{
+        background-color: rgb(206, 167, 243);
+        height: 100%;
+        border: none;
+        background-image: url(/imagenes/Muñeco.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        
+
+    }
+    .botones{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: auto;
+
+    }
+    .encriptar{
+        width: 25vw;
+        margin-left: 3em;
+        
+    }
+    .desencriptar{
+        width: 25vw;
+    }
+    .copiar{
+        width: 80%;
+        height: 60%;
+    }
+    footer{
+        background-color: #daabf0;
+        margin-top: auto;
+        text-align: center;
+        color: rgb(5, 5, 5);
+        font-size: 18px;
+        min-height: 2em;
+        /*position: absolute;
+        bottom: 0;
+        width: 100%;
+        color: white;
+        
+        esto y lo que esta comentado en el body es otra posible solucion  */  
+    }
+    footer p{
+        background-color: #daabf0;
+    }
+    
+
+}
